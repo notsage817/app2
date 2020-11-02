@@ -142,7 +142,7 @@ for i in range(len(major)):
 stmmaj_fig['layout'].update(title='major companies per sector',title_x=0.5)
 
 app = dash.Dash()
-
+server = app.server()
 app.layout = html.Div([
     html.Span(id="vir_span_view", style={"display": "none"}, children=0),
     html.H1(
