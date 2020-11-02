@@ -5,7 +5,6 @@ dash-core-components==1.8.0
 dash-html-components==1.0.2
 dash-renderer==1.2.4
 dash-table==4.6.0
-pandas @ file:///opt/concourse/worker/volumes/live/5ef6147e-ea92-446e-4065-0c8c7435293f/volume/pandas_1592841676717/work
 pandas-datareader==0.9.0
 numpy==1.18.5
 Django==3.1.2
