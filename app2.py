@@ -26,8 +26,8 @@ from plotly import tools
 from plotly.subplots import make_subplots
 import plotly.figure_factory as ff
 
-origin = pd.read_csv('raw data.csv')
-origin = origin.drop('Unnamed: 0',axis=1)
+origin = pd.read_csv('raw data.csv',intel_col = 0)
+
 pre_nosdg = pd.read_csv('prediction_nosdg.csv')
 
 pre_sdg = pd.read_csv('prediction_sdg.csv')
@@ -38,14 +38,13 @@ df_sdg = pd.read_csv('df_sdg.csv')
 
 df_adj = pd.read_csv('df_adj.csv')
 
-outlier_sdg = pd.read_csv('outlier_sdg.csv')
-outlier_sdg = outlier_sdg.drop('Unnamed: 0',axis=1)
+outlier_sdg = pd.read_csv('outlier_sdg.csv',intel_col = 0)
 
-outlier_adj = pd.read_csv('outlier_adj.csv')
-outlier_adj = outlier_adj.drop('Unnamed: 0',axis=1)
+outlier_adj = pd.read_csv('outlier_adj.csv',intel_col = 0)
 
-outlier_senti = pd.read_csv('outlier_senti.csv')
-outlier_senti = outlier_senti.drop('Unnamed: 0',axis=1)
+
+outlier_senti = pd.read_csv('outlier_senti.csv',intel_col = 0)
+
 
 sdg_rank = pd.read_csv('sdg_rank.csv')
 
@@ -55,11 +54,11 @@ senti_rank = pd.read_csv('sentiment_rank.csv')
 
 sdg_major = pd.read_csv('sdg_major.csv')
 
-sdg_adj_major = pd.read_csv('sdg_adj_major.csv')
-sdg_adj_major = sdg_adj_major.drop('Unnamed: 0',axis=1)
+sdg_adj_major = pd.read_csv('sdg_adj_major.csv',intel_col = 0)
 
-senti_major = pd.read_csv('senti_major.csv')
-senti_major =senti_major.drop('Unnamed: 0',axis=1)
+
+senti_major = pd.read_csv('senti_major.csv',intel_col = 0)
+
 
 aapl = origin[origin['Ticker'] == 'AAPL'][['Timestamp','Adj. Close','Price to Book Value','P/E']]
 
